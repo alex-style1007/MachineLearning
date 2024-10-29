@@ -1,3 +1,60 @@
+# Understanding Support Vector Machines (SVM)
+
+This document provides an overview of Support Vector Machines (SVM), a powerful supervised learning algorithm primarily used for classification tasks. We will explore how SVM works and visualize key concepts with graphs.
+
+## Table of Contents
+
+- [Introduction to SVM](#introduction-to-svm)
+- [How SVM Works](#how-svm-works)
+- [Key Concepts](#key-concepts)
+- [Visualization of SVM Concepts](#visualization-of-svm-concepts)
+- [Conclusion](#conclusion)
+
+## Introduction to SVM
+
+Support Vector Machines are supervised learning algorithms that analyze data for classification and regression analysis. The main idea is to find the best separating hyperplane that divides the classes in the feature space.
+
+## How SVM Works
+
+1. **Data Representation**: Each data point is represented as a vector in a high-dimensional space. For example, in a two-dimensional space, data points are plotted on a 2D plane.
+
+2. **Hyperplane**: SVM attempts to find a hyperplane that separates the classes. In a two-dimensional space, this hyperplane is a line.
+
+3. **Maximizing the Margin**: SVM aims to maximize the margin, which is the distance between the hyperplane and the nearest data points from each class (support vectors).
+
+4. **Kernel Trick**: For non-linearly separable data, SVM uses kernel functions to project the data into a higher-dimensional space where a linear separation is possible.
+
+## Key Concepts
+
+- **Support Vectors**: The data points that are closest to the hyperplane and influence its position and orientation.
+- **Margin**: The distance between the hyperplane and the nearest support vectors from either class.
+- **Kernel Functions**: Functions that allow SVM to operate in high-dimensional spaces without explicitly computing the coordinates of the data in that space.
+
+## Visualization of SVM Concepts
+
+### 1. Linearly Separable Data
+
+![Linearly Separable Data](https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/SVM_margin.png/300px-SVM_margin.png)
+
+This graph shows two classes that can be perfectly separated by a straight line (hyperplane). The support vectors are highlighted, and the margin is illustrated.
+
+### 2. Non-Linearly Separable Data with RBF Kernel
+
+![Non-Linearly Separable Data](https://i0.wp.com/spotintelligence.com/wp-content/uploads/2024/05/support-vector-machine-svm.jpg?fit=1200%2C675&ssl=1&resize=1280%2C720)
+
+In this case, the data cannot be separated by a straight line. The SVM uses an RBF kernel to project the data into a higher-dimensional space, allowing a linear separation.
+
+### 3. Margin and Support Vectors
+
+![Margin and Support Vectors](https://media.geeksforgeeks.org/wp-content/uploads/20240226144048/image-217.webp)
+
+This diagram illustrates the margin between the hyperplane and the support vectors. The goal of SVM is to maximize this margin.
+
+## Conclusion
+
+Support Vector Machines are a robust and versatile classification technique that can handle both linearly and non-linearly separable data. Understanding the concepts of hyperplanes, margins, and support vectors is crucial for effectively applying SVMs in various machine learning tasks.
+
+
 # README - Diabetes Classification using SVM
 
 This document details the process followed to classify the diabetes dataset using a Support Vector Machine (SVM) model. An exploratory data analysis (EDA) was conducted, the model was optimized through hyperparameter tuning, and the class separation was visualized.
