@@ -67,6 +67,10 @@ This project implements a Random Forest classifier using a dataset that contains
 - **Visualization**:
   - A bar chart showing the feature importances of the model is displayed.
   - An individual tree from the Random Forest model is visualized.
+
+![alt text](image.png)
+
+
 - **Evaluation**:
   - Predictions are made and the model is evaluated using a classification report.
 
