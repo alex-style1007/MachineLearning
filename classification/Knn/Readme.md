@@ -1,39 +1,44 @@
-## K-Nearest Neighbors (KNN)
+## Label Propagation with K-Nearest Neighbors (KNN)
 
 ### English
 
-**What is K-Nearest Neighbors (KNN)?**
+**What is Label Propagation?**
 
-K-Nearest Neighbors (KNN) is a simple, non-parametric, and instance-based learning algorithm used for both classification and regression tasks. It works by identifying the "k" nearest data points (or "neighbors") to a target point within the feature space. The algorithm classifies the target point based on the majority class of its neighbors (for classification) or averages their values (for regression).
+Label Propagation is a semi-supervised learning algorithm that leverages both labeled and unlabeled data for classification tasks. It operates by spreading labels through the dataset based on the similarities among data points. The algorithm assigns labels to unlabeled data points by propagating the labels of the nearest neighbors.
 
-**When is KNN Used?**
+In the context of Label Propagation, the K-Nearest Neighbors (KNN) algorithm is used as a kernel to measure the similarity between data points. This means that when Label Propagation is applied with a KNN kernel, it considers the "k" nearest neighbors to each data point to decide how to propagate the labels.
 
-KNN is widely used when:
-1. The data is relatively small and low-dimensional, as KNN can be computationally expensive for large datasets.
-2. Simplicity and interpretability are desired, as KNN provides easy-to-understand results.
-3. An application requires a "local" analysis, where the model focuses on neighbors' behavior rather than attempting to fit a global trend.
+**When is Label Propagation with KNN Used?**
+
+Label Propagation with KNN is particularly useful when:
+1. You have a limited amount of labeled data and a larger pool of unlabeled data.
+2. The relationships between data points are non-linear and can be better captured using local information from neighbors.
+3. You want to improve classification performance in scenarios where the dataset is imbalanced or contains noisy data.
 
 ### Español
 
-**¿Qué es K-Nearest Neighbors (KNN)?**
+**¿Qué es la Propagación de Etiquetas?**
 
-K-Nearest Neighbors (KNN) es un algoritmo de aprendizaje simple, no paramétrico y basado en instancias, que se utiliza tanto para tareas de clasificación como de regresión. Funciona identificando los "k" puntos de datos más cercanos (o "vecinos") a un punto objetivo dentro del espacio de características. El algoritmo clasifica el punto objetivo en función de la clase mayoritaria de sus vecinos (para clasificación) o promedia sus valores (para regresión).
+La Propagación de Etiquetas es un algoritmo de aprendizaje semi-supervisado que aprovecha tanto datos etiquetados como no etiquetados para tareas de clasificación. Funciona propagando etiquetas a través del conjunto de datos basándose en las similitudes entre los puntos de datos. El algoritmo asigna etiquetas a los puntos de datos no etiquetados propagando las etiquetas de los vecinos más cercanos.
 
-**¿Cuándo se usa KNN?**
+En el contexto de la Propagación de Etiquetas, el algoritmo K-Nearest Neighbors (KNN) se utiliza como un kernel para medir la similitud entre los puntos de datos. Esto significa que cuando se aplica la Propagación de Etiquetas con un kernel KNN, se consideran los "k" vecinos más cercanos a cada punto de datos para decidir cómo propagar las etiquetas.
 
-KNN es ampliamente utilizado cuando:
-1. Los datos son relativamente pequeños y de baja dimensionalidad, ya que KNN puede ser costoso computacionalmente para grandes conjuntos de datos.
-2. Se desea simplicidad e interpretabilidad, ya que KNN proporciona resultados fáciles de entender.
-3. Una aplicación requiere un análisis "local", donde el modelo se enfoca en el comportamiento de los vecinos en lugar de intentar ajustar una tendencia global.
+**¿Cuándo se usa la Propagación de Etiquetas con KNN?**
+
+La Propagación de Etiquetas con KNN es particularmente útil cuando:
+1. Se tiene una cantidad limitada de datos etiquetados y un conjunto más grande de datos no etiquetados.
+2. Las relaciones entre los puntos de datos son no lineales y pueden ser mejor capturadas utilizando información local de los vecinos.
+3. Se desea mejorar el rendimiento de clasificación en situaciones donde el conjunto de datos está desbalanceado o contiene datos ruidosos.
 
 
-# Academic Dropout Prediction Using Label Propagation and SMOTEENN
 
-## Description (Descripción)
+# Academic Dropout Prediction Using Label Propagation with KNN
 
-This project explores the prediction of academic dropout among engineering students using data analysis, Label Propagation, and class balancing techniques. The dataset undergoes preprocessing, feature reduction, and visualization of model performance to gain insights into patterns that contribute to student dropout.
+Description (Descripción)
 
-Este proyecto explora la predicción de la deserción académica entre estudiantes de ingeniería mediante análisis de datos, propagación de etiquetas y técnicas de balanceo de clases. Los datos son preprocesados, se realiza reducción de variables y se visualiza el rendimiento del modelo para entender patrones que contribuyen a la deserción estudiantil.
+This project explores the prediction of academic dropout among engineering students using data analysis, Label Propagation with a KNN kernel, and class balancing techniques. The dataset undergoes preprocessing, feature reduction, and visualization of model performance to gain insights into patterns that contribute to student dropout.
+
+Este proyecto explora la predicción de la deserción académica entre estudiantes de ingeniería mediante análisis de datos, Propagación de Etiquetas con un kernel KNN y técnicas de balanceo de clases. Los datos son preprocesados, se realiza reducción de variables y se visualiza el rendimiento del modelo para entender patrones que contribuyen a la deserción estudiantil.
 
 # Prerequisites (Requisitos)
 
